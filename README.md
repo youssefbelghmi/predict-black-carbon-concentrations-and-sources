@@ -65,8 +65,6 @@ See the Acknowledgments section of the report for full credits and gratitude.
 
 ## Contact
 
-For questions, feedback or collaboration inquiries:
-
 **Author**: Youssef Belghmi 
 
 **Affiliation**: Master in Data Science, EPFL 
