@@ -10,8 +10,6 @@ The objective of this project was to:
 - Analyze how protocols, instruments, and atmospheric conditions (e.g., secondary aerosols and dust) influence the BC–EC relationship.
 - Provide a robust foundation for future harmonization models, to make BC and EC data more comparable across sites and studies.
 
----
-
 ## Notebooks
 
 ### `01_data_preparation_and_bias_analysis.ipynb`
@@ -25,8 +23,6 @@ This notebook includes:
   - ANOVA and linear regression models
   - Median quantile regressions by protocol and instrument type
 
----
-
 ### `02_environmental_factors_analysis.ipynb`
 
 This notebook explores how atmospheric conditions contribute to measurement bias:
@@ -37,7 +33,13 @@ This notebook explores how atmospheric conditions contribute to measurement bias
 - Polynomial and spline regression models
 - Dust impact analysis on the BC/EC ratio
 
----
+## Data Availability
+
+The full raw dataset used in this project was too large to be included directly in this repository. However, we provide two key preprocessed subsets:
+
+- **`df_colocated.csv`**: This dataframe contains co-located EC and BC measurements after preprocessing and outlier detection (see Notebook 1). Each observation includes detailed metadata such as the measurement protocol and instrument used.
+
+- **`df_merged_colocated.csv`**: This is a refined version of `df_colocated.csv` enriched with modeled environmental variables from CAMx (Comprehensive Air Quality Model with Extensions), including concentrations of secondary aerosols (e.g., OA, NO₃⁻, SO₄²⁻, NH₄⁺) and mineral dust. This dataset was used for the analysis in Notebook 2.
 
 ## Final Report
 
@@ -51,8 +53,6 @@ Key sections include:
 - Environmental influences (aerosols, dust) on concentration estimates
 - Conclusion, limitations, and future directions
 
----
-
 ## Supervisors and Acknowledgments
 
 This project was conducted in collaboration with:
@@ -63,8 +63,6 @@ This project was conducted in collaboration with:
 
 See the Acknowledgments section of the report for full credits and gratitude.
 
----
-
 ## Contact
 
 For questions, feedback or collaboration inquiries:
@@ -72,5 +70,3 @@ For questions, feedback or collaboration inquiries:
 **Author**: Youssef Belghmi 
 **Affiliation**: Master in Data Science, EPFL  
 **Email**: [youssef.belghmi@epfl.ch]
-
----
